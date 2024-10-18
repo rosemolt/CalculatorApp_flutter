@@ -1,4 +1,5 @@
 import 'package:calculator_app/pages/add.dart';
+import 'package:calculator_app/pages/div.dart';
 import 'package:calculator_app/pages/mul.dart';
 import 'package:calculator_app/pages/sub.dart';
 import 'package:flutter/cupertino.dart';
@@ -95,6 +96,7 @@ class HomePage extends StatelessWidget {
                     backgroundColor: Colors.deepPurpleAccent
                 ),
                 onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> DivisionPage()));
                 },
                 child: Text(
                   "DIVISION",
