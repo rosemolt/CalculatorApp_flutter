@@ -1,8 +1,9 @@
+import 'package:calculator_app/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main()
 {
-  runApp();
+  runApp(CalculatorApp());
 }
 
 class CalculatorApp extends StatelessWidget {
@@ -23,7 +24,7 @@ class CalculatorApp extends StatelessWidget {
           ),
           backgroundColor: Colors.blueAccent,
         ),
-        body: ,
+        body: HomePage(),
       ),
     );
   }
