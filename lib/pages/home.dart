@@ -1,4 +1,5 @@
 import 'package:calculator_app/pages/add.dart';
+import 'package:calculator_app/pages/mul.dart';
 import 'package:calculator_app/pages/sub.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -52,7 +53,7 @@ class HomePage extends StatelessWidget {
                   backgroundColor: Colors.deepPurpleAccent,
                 ),
                 onPressed: (){
-
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> SubtractPage()));
                 },
                 child: Text(
                   "SUBTRACT",
@@ -73,7 +74,7 @@ class HomePage extends StatelessWidget {
                     backgroundColor: Colors.deepPurpleAccent
                 ),
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> SubtractPage()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> MultiplicationPage()));
                 } ,
                 child: Text(
                   "PRODUCT",
@@ -94,7 +95,6 @@ class HomePage extends StatelessWidget {
                     backgroundColor: Colors.deepPurpleAccent
                 ),
                 onPressed: () {
-
                 },
                 child: Text(
                   "DIVISION",
